@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/BehavioralPattern/BehavioralPattern.iml" filepath="$PROJECT_DIR$/BehavioralPattern/BehavioralPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CreationalPattern/CreationalPattern.iml" filepath="$PROJECT_DIR$/CreationalPattern/CreationalPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/Stone.iml" filepath="$PROJECT_DIR$/Stone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StructuralPattern/StructuralPattern.iml" filepath="$PROJECT_DIR$/StructuralPattern/StructuralPattern.iml" />
     </modules>
   </component>
 </project>
