@@ -1,4 +1,8 @@
-public abstract class Stone implements Comparable<Stone> {
+package Model.Stones;
+
+import java.io.Serializable;
+
+public abstract class Stone implements Comparable<Stone> , Serializable {
     private final String name;
     private final double caratWeight;
     private final double price;

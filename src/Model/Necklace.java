@@ -1,12 +1,15 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+package Model;
 
-public class Necklace {
-    private final List<Stone> stones;
+import Model.Stones.Stone;
+
+import java.io.Serializable;
+import java.util.*;
+
+public class Necklace implements Serializable {
+    private Deque<Stone> stones;
 
     public Necklace() {
-        stones = new ArrayList<>();
+        stones = new ArrayDeque<>();
     }
 
     public void addStone(Stone stone) {
@@ -26,11 +29,14 @@ public class Necklace {
         for (Stone stone : stones) {
             totalPrice += stone.getPrice();
         }
+
         return totalPrice;
     }
 
-    public void sortByValue() {
-        Collections.sort(stones);
+    public void sortByPrice() {
+        List<Stone> sortedStone = new ArrayList<>(stones);
+        Collections.sort(sortedStone);
+        stones = new ArrayDeque<>(sortedStone);
     }
 
     public void show(){
