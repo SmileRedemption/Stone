@@ -55,4 +55,8 @@ public class Necklace implements Serializable {
         }
         return result;
     }
+
+    public Deque<Stone> getStones() {
+        return stones;
+    }
 }

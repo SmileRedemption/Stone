@@ -1,12 +1,12 @@
 import Model.Necklace;
 import View.Menu;
+import View.ViewGui;
 
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Menu menu = new Menu(new Scanner(System.in), new Necklace());
-        menu.run();
+        ViewGui viewGui = new ViewGui();
     }
 }
 
